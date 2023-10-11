@@ -1,38 +1,35 @@
-let counter = 0;
+import { useState } from "react";
 
-const Hello = (props) => {
-  counter += 1;
-  console.log(props);
-  return (
-    <div>
-      <p>
-        Hello {props.name}: number {counter}
-      </p>
-      <p>You are {props.age} years old</p>
-    </div>
-  );
-};
+const Button = (props) => (
+  <button onClick={props.handleClick}>{props.text}</button>
+);
+
+const Display = (props) => <div>{props.value}</div>;
 
 const App = () => {
-  const now = new Date();
-  const a = 10;
-  const b = 20;
-  console.log(now, a + b);
+  const [value, setValue] = useState(10);
 
-  const name = "Peter";
-  const age = 10;
+  const setToValue = (newValue) => () => {
+    console.log("value set to", newValue);
+    setValue(newValue);
+  };
+
+  const hello = (who) => () => {
+    console.log("Hello,", who);
+  };
 
   return (
     <div>
-      <p>Hello world, it is {now.toString()}</p>
-      <p>
-        {a} plus {b} is {a + b}
-        <Hello name="Bob" age={a + b} />
-        <Hello name={name} age={age} />
-        <Hello name="Stacy" age={(Math.random * 10).toString()} />
-      </p>
+      <Display value={value} />
+      <button onClick={hello("world")}>reset to zero</button>
+      <button onClick={hello("react")}>reset to zero</button>
+      <button onClick={hello("function")}>reset to zero</button>
+      <div>
+        <button onClick={setToValue(1000)}>thousand</button>{" "}
+        <button onClick={setToValue(0)}>reset</button>{" "}
+        <button onClick={setToValue(value + 1)}>increment</button>
+      </div>
     </div>
   );
 };
-
 export default App;

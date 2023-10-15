@@ -1,4 +1,4 @@
-//import ContactEntry from "./ContactEntry";
+import Weather from "./Weather";
 
 const CountryList = (props) => {
   // No result return
@@ -34,9 +34,10 @@ const CountryList = (props) => {
             ))}
           </ul>
         </div>
-        <div>
-          <img src={country.flags.png} />
-        </div>
+
+        <img src={country.flags.png} />
+        <br />
+        <Weather latlang={country.latlng} />
       </div>
     );
   }

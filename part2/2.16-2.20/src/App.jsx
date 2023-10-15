@@ -1,0 +1,271 @@
+import { useState, useEffect } from "react";
+import contactService from "./services/contacts";
+
+//import ContactEntry from "./components/ContactEntry";
+import ContactList from "./components/ContactList";
+import InputEntry from "./components/InputEntry";
+import AddNewContact from "./components/AddNewContact";
+import Notification from "./components/Notification";
+
+// This is excersise 2.10 - Phonebook step 5
+
+const App = () => {
+  const [persons, setPersons] = useState([]);
+  const [newName, setNewName] = useState("");
+  const [newNumber, setNewNumber] = useState("");
+  const [nameSearch, setNameSearch] = useState("");
+  const [notificationData, setNotificationData] = useState({
+    message: null,
+    isError: false,
+  }); // data is {message: "message", isError: true/false}
+
+  const RefreshContacts = () => {
+    contactService
+      .getAll()
+      .then((initialContacts) => {
+        setPersons(initialContacts);
+      })
+      .catch((error) => {
+        console.log("Error getting contacts", error);
+      });
+  };
+
+  const getContactsHook = () => {
+    //console.log("Get contacts starting");
+    contactService
+      .getAll()
+      .then((initialContacts) => {
+        setPersons(initialContacts);
+      })
+      .catch((error) => {
+        console.log("Error getting contacts", error);
+      });
+  };
+
+  useEffect(getContactsHook, []); // Using an empty array here means it only runs once on the first render. What a strange way for react to work.
+
+  // Dirt way to get a free id slot
+  const GetFreeIDSlot = () => {
+    let id = 0;
+    while (persons.find((person) => person.id === id)) {
+      id++;
+    }
+    return id;
+  };
+
+  const addPerson = (event) => {
+    console.log("addPerson");
+    event.preventDefault();
+    const personObject = {
+      id: GetFreeIDSlot(),
+      name: newName,
+      number: newNumber,
+    };
+
+    // Check if the person is added
+    // 2.7 element
+    const exisitingPerson = personAlreadyAdded(newName);
+    //console.log("exisitingPerson", exisitingPerson);
+    if (exisitingPerson) {
+      if (
+        !window.confirm(
+          `${exisitingPerson.name} is already added to phonebook, would you like to update their details? ${exisitingPerson.name} : ${exisitingPerson.number} will become ${newName} : ${newNumber}`
+        )
+      ) {
+        // If no, return and do nothing
+        return;
+      }
+
+      contactService
+        .update(exisitingPerson.id, personObject)
+        .then((returnedContact) => {
+          setPersons(
+            persons.map((p) =>
+              p.id !== exisitingPerson.id ? p : returnedContact
+            )
+          );
+          triggerNotificationMessage(
+            `${personObject.name} has been added to the contact list with the number ${personObject.number}`,
+            false
+          );
+        })
+        .catch((error) => {
+          triggerNotificationMessage(
+            `An error occured updating ${existingNumber.name}`,
+            true
+          );
+        });
+      return;
+    }
+    // 2.8 element
+    // We do a lot of duplication here, we should refactor.
+    const existingNumber = numberAlreadyAdded(newNumber);
+    if (existingNumber) {
+      if (
+        !window.confirm(
+          `${existingNumber.number} is already added to phonebook, would you like to update their details? ${existingNumber.name} : ${existingNumber.number} will become ${newName} : ${newNumber}`
+        )
+      ) {
+        // If no, return and do nothing
+        return;
+      }
+
+      // After all this, we can now update the person
+      contactService
+        .update(existingNumber.id, personObject)
+        .then((returnedContact) => {
+          setPersons(
+            persons.map((p) =>
+              p.id !== existingNumber.id ? p : returnedContact
+            )
+          );
+          triggerNotificationMessage(
+            `${personObject.name} has been added to the contact list with the number ${personObject.number}`,
+            false
+          );
+        })
+        .catch((error) => {
+          triggerNotificationMessage(
+            `An error occured updating ${existingNumber.name}`,
+            true
+          );
+        });
+      return;
+    }
+
+    // Now add the person
+    contactService.create(personObject).then((returnedContact) => {
+      setPersons(persons.concat(returnedContact));
+      triggerNotificationMessage(
+        `${personObject.name} has been added to the contact list with the number ${personObject.number}`,
+        false
+      );
+      setNewName(""); // Clear new name field
+      setNewNumber(""); // Clear new number field
+    });
+  };
+
+  // Deleting a contact
+  const deleteContact = (personToDelete) => {
+    console.log("deleteContact for: ", personToDelete.name);
+
+    if (!window.confirm(`Delete contact ${personToDelete.name}?`)) {
+      return;
+    }
+
+    contactService
+      .deleteContact(personToDelete.id)
+      .then(() => {
+        setPersons(persons.filter((person) => person.id !== personToDelete.id));
+        triggerNotificationMessage(
+          `${personToDelete.name} has been deleted`,
+          false
+        );
+      })
+      .catch((error) => {
+        triggerNotificationMessage(
+          `${personToDelete.name} has already been removed from the server. The contact list has now been refreshed`,
+          true
+        );
+        // Need to refresh the list now.
+        RefreshContacts();
+        //console.log("Error deleting contact: ", personToDelete.name, error);
+      });
+  };
+
+  // 2.7 element
+  const personAlreadyAdded = (nameToCheck) => {
+    const alreadyAdded = persons.find((person) => person.name === nameToCheck);
+    return alreadyAdded;
+  };
+
+  // 2.8 element
+  const numberAlreadyAdded = (numberToCheck) => {
+    const alreadyAdded = persons.find(
+      (person) => person.number === numberToCheck
+    );
+    return alreadyAdded;
+  };
+
+  const handleNameChange = (event) => {
+    setNewName(event.target.value);
+  };
+
+  const handleNumberChange = (event) => {
+    setNewNumber(event.target.value);
+  };
+
+  const handleNameSearchChange = (event) => {
+    setNameSearch(event.target.value);
+  };
+
+  const triggerNotificationMessage = (messageText, isError) => {
+    setNotificationData({ message: messageText, isError: isError });
+    setTimeout(() => {
+      setNotificationData({ message: null, isError: false });
+    }, 4000);
+  };
+
+  // Ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+  // Ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+  // filter persons to show based on the name filter. Use a bit of regex to search the start of the strings to make a little fancy
+  const personsToShow = () => {
+    if (nameSearch.length === 0) {
+      return persons;
+    }
+    //person.name.toLowerCase() === nameSearch.toLowerCase()
+    return persons.filter((person) => reNameSearchPattern.test(person.name));
+  };
+
+  // Search for if any of the nameSearch is in the start of the string
+  // i at the end indicates it ignores case
+  const reNameSearchPattern = new RegExp(`^${nameSearch}`, "i");
+
+  return (
+    <div>
+      <div className="CenterBox">
+        <h1>Phonebook</h1>
+        <button
+          className="button"
+          onClick={() =>
+            triggerNotificationMessage("A test error message", true)
+          }
+        >
+          Test error message
+        </button>
+        <button
+          className="button"
+          onClick={() =>
+            triggerNotificationMessage("A test success message", false)
+          }
+        >
+          Test success message
+        </button>
+        <Notification
+          message={notificationData.message}
+          isError={notificationData.isError}
+        />
+        <InputEntry
+          newValue={nameSearch}
+          handleChange={handleNameSearchChange}
+          label="Contact Search"
+        />
+        <hr />
+        <AddNewContact
+          submitAction={addPerson}
+          newName={newName}
+          handleNameChange={handleNameChange}
+          newNumber={newNumber}
+          handleNumberChange={handleNumberChange}
+        />
+
+        <ContactList
+          contactsToShow={personsToShow()}
+          onClickHandler={deleteContact}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default App;

@@ -1,18 +1,7 @@
+This repo contains all the excersises for parts 0-3
 
+This repo does NOT contain the backend. that is in this repo:
+https://github.com/Agilethief/FSOPart3
 
-You may submit all the exercises of this course into the same repository, or use multiple repositories. If you submit exercises of different parts into the same repository, please use a sensible naming scheme for the directories.
-
-One very functional file structure for the submission repository is as follows:
-
-<pre>
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  phonebook
-  countries
-</pre>
-
-Put the whole react repository of the project to each folder except the folder <i>node_modules</i>
+The online version of the contact book is found here:
+https://white-mountain-6577.fly.dev/

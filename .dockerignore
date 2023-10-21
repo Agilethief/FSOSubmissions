@@ -1,0 +1,419 @@
+# flyctl launch added from .gitignore
+**\node_modules
+
+# flyctl launch added from BlankReactSetup\blankApp\.gitignore
+# Logs
+BlankReactSetup\blankApp\**\logs
+BlankReactSetup\blankApp\**\*.log
+BlankReactSetup\blankApp\**\npm-debug.log*
+BlankReactSetup\blankApp\**\yarn-debug.log*
+BlankReactSetup\blankApp\**\yarn-error.log*
+BlankReactSetup\blankApp\**\pnpm-debug.log*
+BlankReactSetup\blankApp\**\lerna-debug.log*
+
+BlankReactSetup\blankApp\**\node_modules
+BlankReactSetup\blankApp\**\dist
+BlankReactSetup\blankApp\**\dist-ssr
+BlankReactSetup\blankApp\**\*.local
+
+# Editor directories and files
+BlankReactSetup\blankApp\**\.vscode\*
+!BlankReactSetup\blankApp\**\.vscode\extensions.json
+BlankReactSetup\blankApp\**\.idea
+BlankReactSetup\blankApp\**\.DS_Store
+BlankReactSetup\blankApp\**\*.suo
+BlankReactSetup\blankApp\**\*.ntvs*
+BlankReactSetup\blankApp\**\*.njsproj
+BlankReactSetup\blankApp\**\*.sln
+BlankReactSetup\blankApp\**\*.sw?
+
+# flyctl launch added from part1\1.1-course-information\.gitignore
+# Logs
+part1\1.1-course-information\**\logs
+part1\1.1-course-information\**\*.log
+part1\1.1-course-information\**\npm-debug.log*
+part1\1.1-course-information\**\yarn-debug.log*
+part1\1.1-course-information\**\yarn-error.log*
+part1\1.1-course-information\**\pnpm-debug.log*
+part1\1.1-course-information\**\lerna-debug.log*
+
+part1\1.1-course-information\**\node_modules
+part1\1.1-course-information\**\dist
+part1\1.1-course-information\**\dist-ssr
+part1\1.1-course-information\**\*.local
+
+# Editor directories and files
+part1\1.1-course-information\**\.vscode\*
+!part1\1.1-course-information\**\.vscode\extensions.json
+part1\1.1-course-information\**\.idea
+part1\1.1-course-information\**\.DS_Store
+part1\1.1-course-information\**\*.suo
+part1\1.1-course-information\**\*.ntvs*
+part1\1.1-course-information\**\*.njsproj
+part1\1.1-course-information\**\*.sln
+part1\1.1-course-information\**\*.sw?
+
+# flyctl launch added from part1\1.12-1.14-Anecdotes\.gitignore
+# Logs
+part1\1.12-1.14-Anecdotes\**\logs
+part1\1.12-1.14-Anecdotes\**\*.log
+part1\1.12-1.14-Anecdotes\**\npm-debug.log*
+part1\1.12-1.14-Anecdotes\**\yarn-debug.log*
+part1\1.12-1.14-Anecdotes\**\yarn-error.log*
+part1\1.12-1.14-Anecdotes\**\pnpm-debug.log*
+part1\1.12-1.14-Anecdotes\**\lerna-debug.log*
+
+part1\1.12-1.14-Anecdotes\**\node_modules
+part1\1.12-1.14-Anecdotes\**\dist
+part1\1.12-1.14-Anecdotes\**\dist-ssr
+part1\1.12-1.14-Anecdotes\**\*.local
+
+# Editor directories and files
+part1\1.12-1.14-Anecdotes\**\.vscode\*
+!part1\1.12-1.14-Anecdotes\**\.vscode\extensions.json
+part1\1.12-1.14-Anecdotes\**\.idea
+part1\1.12-1.14-Anecdotes\**\.DS_Store
+part1\1.12-1.14-Anecdotes\**\*.suo
+part1\1.12-1.14-Anecdotes\**\*.ntvs*
+part1\1.12-1.14-Anecdotes\**\*.njsproj
+part1\1.12-1.14-Anecdotes\**\*.sln
+part1\1.12-1.14-Anecdotes\**\*.sw?
+
+# flyctl launch added from part1\1.2-course-information\.gitignore
+# Logs
+part1\1.2-course-information\**\logs
+part1\1.2-course-information\**\*.log
+part1\1.2-course-information\**\npm-debug.log*
+part1\1.2-course-information\**\yarn-debug.log*
+part1\1.2-course-information\**\yarn-error.log*
+part1\1.2-course-information\**\pnpm-debug.log*
+part1\1.2-course-information\**\lerna-debug.log*
+
+part1\1.2-course-information\**\node_modules
+part1\1.2-course-information\**\dist
+part1\1.2-course-information\**\dist-ssr
+part1\1.2-course-information\**\*.local
+
+# Editor directories and files
+part1\1.2-course-information\**\.vscode\*
+!part1\1.2-course-information\**\.vscode\extensions.json
+part1\1.2-course-information\**\.idea
+part1\1.2-course-information\**\.DS_Store
+part1\1.2-course-information\**\*.suo
+part1\1.2-course-information\**\*.ntvs*
+part1\1.2-course-information\**\*.njsproj
+part1\1.2-course-information\**\*.sln
+part1\1.2-course-information\**\*.sw?
+
+# flyctl launch added from part1\1.3-course-information\.gitignore
+# Logs
+part1\1.3-course-information\**\logs
+part1\1.3-course-information\**\*.log
+part1\1.3-course-information\**\npm-debug.log*
+part1\1.3-course-information\**\yarn-debug.log*
+part1\1.3-course-information\**\yarn-error.log*
+part1\1.3-course-information\**\pnpm-debug.log*
+part1\1.3-course-information\**\lerna-debug.log*
+
+part1\1.3-course-information\**\node_modules
+part1\1.3-course-information\**\dist
+part1\1.3-course-information\**\dist-ssr
+part1\1.3-course-information\**\*.local
+
+# Editor directories and files
+part1\1.3-course-information\**\.vscode\*
+!part1\1.3-course-information\**\.vscode\extensions.json
+part1\1.3-course-information\**\.idea
+part1\1.3-course-information\**\.DS_Store
+part1\1.3-course-information\**\*.suo
+part1\1.3-course-information\**\*.ntvs*
+part1\1.3-course-information\**\*.njsproj
+part1\1.3-course-information\**\*.sln
+part1\1.3-course-information\**\*.sw?
+
+# flyctl launch added from part1\1.4-course-information\.gitignore
+# Logs
+part1\1.4-course-information\**\logs
+part1\1.4-course-information\**\*.log
+part1\1.4-course-information\**\npm-debug.log*
+part1\1.4-course-information\**\yarn-debug.log*
+part1\1.4-course-information\**\yarn-error.log*
+part1\1.4-course-information\**\pnpm-debug.log*
+part1\1.4-course-information\**\lerna-debug.log*
+
+part1\1.4-course-information\**\node_modules
+part1\1.4-course-information\**\dist
+part1\1.4-course-information\**\dist-ssr
+part1\1.4-course-information\**\*.local
+
+# Editor directories and files
+part1\1.4-course-information\**\.vscode\*
+!part1\1.4-course-information\**\.vscode\extensions.json
+part1\1.4-course-information\**\.idea
+part1\1.4-course-information\**\.DS_Store
+part1\1.4-course-information\**\*.suo
+part1\1.4-course-information\**\*.ntvs*
+part1\1.4-course-information\**\*.njsproj
+part1\1.4-course-information\**\*.sln
+part1\1.4-course-information\**\*.sw?
+
+# flyctl launch added from part1\1.5-course-information\.gitignore
+# Logs
+part1\1.5-course-information\**\logs
+part1\1.5-course-information\**\*.log
+part1\1.5-course-information\**\npm-debug.log*
+part1\1.5-course-information\**\yarn-debug.log*
+part1\1.5-course-information\**\yarn-error.log*
+part1\1.5-course-information\**\pnpm-debug.log*
+part1\1.5-course-information\**\lerna-debug.log*
+
+part1\1.5-course-information\**\node_modules
+part1\1.5-course-information\**\dist
+part1\1.5-course-information\**\dist-ssr
+part1\1.5-course-information\**\*.local
+
+# Editor directories and files
+part1\1.5-course-information\**\.vscode\*
+!part1\1.5-course-information\**\.vscode\extensions.json
+part1\1.5-course-information\**\.idea
+part1\1.5-course-information\**\.DS_Store
+part1\1.5-course-information\**\*.suo
+part1\1.5-course-information\**\*.ntvs*
+part1\1.5-course-information\**\*.njsproj
+part1\1.5-course-information\**\*.sln
+part1\1.5-course-information\**\*.sw?
+
+# flyctl launch added from part1\1.6-1.11-unicafe\.gitignore
+# Logs
+part1\1.6-1.11-unicafe\**\logs
+part1\1.6-1.11-unicafe\**\*.log
+part1\1.6-1.11-unicafe\**\npm-debug.log*
+part1\1.6-1.11-unicafe\**\yarn-debug.log*
+part1\1.6-1.11-unicafe\**\yarn-error.log*
+part1\1.6-1.11-unicafe\**\pnpm-debug.log*
+part1\1.6-1.11-unicafe\**\lerna-debug.log*
+
+part1\1.6-1.11-unicafe\**\node_modules
+part1\1.6-1.11-unicafe\**\dist
+part1\1.6-1.11-unicafe\**\dist-ssr
+part1\1.6-1.11-unicafe\**\*.local
+
+# Editor directories and files
+part1\1.6-1.11-unicafe\**\.vscode\*
+!part1\1.6-1.11-unicafe\**\.vscode\extensions.json
+part1\1.6-1.11-unicafe\**\.idea
+part1\1.6-1.11-unicafe\**\.DS_Store
+part1\1.6-1.11-unicafe\**\*.suo
+part1\1.6-1.11-unicafe\**\*.ntvs*
+part1\1.6-1.11-unicafe\**\*.njsproj
+part1\1.6-1.11-unicafe\**\*.sln
+part1\1.6-1.11-unicafe\**\*.sw?
+
+# flyctl launch added from part1\Coursework\.gitignore
+# Logs
+part1\Coursework\**\logs
+part1\Coursework\**\*.log
+part1\Coursework\**\npm-debug.log*
+part1\Coursework\**\yarn-debug.log*
+part1\Coursework\**\yarn-error.log*
+part1\Coursework\**\pnpm-debug.log*
+part1\Coursework\**\lerna-debug.log*
+
+part1\Coursework\**\node_modules
+part1\Coursework\**\dist
+part1\Coursework\**\dist-ssr
+part1\Coursework\**\*.local
+
+# Editor directories and files
+part1\Coursework\**\.vscode\*
+!part1\Coursework\**\.vscode\extensions.json
+part1\Coursework\**\.idea
+part1\Coursework\**\.DS_Store
+part1\Coursework\**\*.suo
+part1\Coursework\**\*.ntvs*
+part1\Coursework\**\*.njsproj
+part1\Coursework\**\*.sln
+part1\Coursework\**\*.sw?
+
+# flyctl launch added from part2\2.1-2.5 - Course information\.gitignore
+# Logs
+part2\2.1-2.5 - Course information\**\logs
+part2\2.1-2.5 - Course information\**\*.log
+part2\2.1-2.5 - Course information\**\npm-debug.log*
+part2\2.1-2.5 - Course information\**\yarn-debug.log*
+part2\2.1-2.5 - Course information\**\yarn-error.log*
+part2\2.1-2.5 - Course information\**\pnpm-debug.log*
+part2\2.1-2.5 - Course information\**\lerna-debug.log*
+
+part2\2.1-2.5 - Course information\**\node_modules
+part2\2.1-2.5 - Course information\**\dist
+part2\2.1-2.5 - Course information\**\dist-ssr
+part2\2.1-2.5 - Course information\**\*.local
+
+# Editor directories and files
+part2\2.1-2.5 - Course information\**\.vscode\*
+!part2\2.1-2.5 - Course information\**\.vscode\extensions.json
+part2\2.1-2.5 - Course information\**\.idea
+part2\2.1-2.5 - Course information\**\.DS_Store
+part2\2.1-2.5 - Course information\**\*.suo
+part2\2.1-2.5 - Course information\**\*.ntvs*
+part2\2.1-2.5 - Course information\**\*.njsproj
+part2\2.1-2.5 - Course information\**\*.sln
+part2\2.1-2.5 - Course information\**\*.sw?
+
+# flyctl launch added from part2\2.11-2.15\.gitignore
+# Logs
+part2\2.11-2.15\**\logs
+part2\2.11-2.15\**\*.log
+part2\2.11-2.15\**\npm-debug.log*
+part2\2.11-2.15\**\yarn-debug.log*
+part2\2.11-2.15\**\yarn-error.log*
+part2\2.11-2.15\**\pnpm-debug.log*
+part2\2.11-2.15\**\lerna-debug.log*
+
+part2\2.11-2.15\**\node_modules
+part2\2.11-2.15\**\dist
+part2\2.11-2.15\**\dist-ssr
+part2\2.11-2.15\**\*.local
+
+# Editor directories and files
+part2\2.11-2.15\**\.vscode\*
+!part2\2.11-2.15\**\.vscode\extensions.json
+part2\2.11-2.15\**\.idea
+part2\2.11-2.15\**\.DS_Store
+part2\2.11-2.15\**\*.suo
+part2\2.11-2.15\**\*.ntvs*
+part2\2.11-2.15\**\*.njsproj
+part2\2.11-2.15\**\*.sln
+part2\2.11-2.15\**\*.sw?
+
+# flyctl launch added from part2\2.16-2.20\.gitignore
+# Logs
+part2\2.16-2.20\**\logs
+part2\2.16-2.20\**\*.log
+part2\2.16-2.20\**\npm-debug.log*
+part2\2.16-2.20\**\yarn-debug.log*
+part2\2.16-2.20\**\yarn-error.log*
+part2\2.16-2.20\**\pnpm-debug.log*
+part2\2.16-2.20\**\lerna-debug.log*
+
+part2\2.16-2.20\**\node_modules
+part2\2.16-2.20\**\dist
+part2\2.16-2.20\**\dist-ssr
+part2\2.16-2.20\**\*.local
+
+# Editor directories and files
+part2\2.16-2.20\**\.vscode\*
+!part2\2.16-2.20\**\.vscode\extensions.json
+part2\2.16-2.20\**\.idea
+part2\2.16-2.20\**\.DS_Store
+part2\2.16-2.20\**\*.suo
+part2\2.16-2.20\**\*.ntvs*
+part2\2.16-2.20\**\*.njsproj
+part2\2.16-2.20\**\*.sln
+part2\2.16-2.20\**\*.sw?
+
+# flyctl launch added from part2\2.19-2.20 countries\.gitignore
+# Logs
+part2\2.19-2.20 countries\**\logs
+part2\2.19-2.20 countries\**\*.log
+part2\2.19-2.20 countries\**\npm-debug.log*
+part2\2.19-2.20 countries\**\yarn-debug.log*
+part2\2.19-2.20 countries\**\yarn-error.log*
+part2\2.19-2.20 countries\**\pnpm-debug.log*
+part2\2.19-2.20 countries\**\lerna-debug.log*
+
+part2\2.19-2.20 countries\**\node_modules
+part2\2.19-2.20 countries\**\dist
+part2\2.19-2.20 countries\**\dist-ssr
+part2\2.19-2.20 countries\**\*.local
+
+# Editor directories and files
+part2\2.19-2.20 countries\**\.vscode\*
+!part2\2.19-2.20 countries\**\.vscode\extensions.json
+part2\2.19-2.20 countries\**\.idea
+part2\2.19-2.20 countries\**\.DS_Store
+part2\2.19-2.20 countries\**\*.suo
+part2\2.19-2.20 countries\**\*.ntvs*
+part2\2.19-2.20 countries\**\*.njsproj
+part2\2.19-2.20 countries\**\*.sln
+part2\2.19-2.20 countries\**\*.sw?
+
+# flyctl launch added from part2\2.4-2.5 - Course information\.gitignore
+# Logs
+part2\2.4-2.5 - Course information\**\logs
+part2\2.4-2.5 - Course information\**\*.log
+part2\2.4-2.5 - Course information\**\npm-debug.log*
+part2\2.4-2.5 - Course information\**\yarn-debug.log*
+part2\2.4-2.5 - Course information\**\yarn-error.log*
+part2\2.4-2.5 - Course information\**\pnpm-debug.log*
+part2\2.4-2.5 - Course information\**\lerna-debug.log*
+
+part2\2.4-2.5 - Course information\**\node_modules
+part2\2.4-2.5 - Course information\**\dist
+part2\2.4-2.5 - Course information\**\dist-ssr
+part2\2.4-2.5 - Course information\**\*.local
+
+# Editor directories and files
+part2\2.4-2.5 - Course information\**\.vscode\*
+!part2\2.4-2.5 - Course information\**\.vscode\extensions.json
+part2\2.4-2.5 - Course information\**\.idea
+part2\2.4-2.5 - Course information\**\.DS_Store
+part2\2.4-2.5 - Course information\**\*.suo
+part2\2.4-2.5 - Course information\**\*.ntvs*
+part2\2.4-2.5 - Course information\**\*.njsproj
+part2\2.4-2.5 - Course information\**\*.sln
+part2\2.4-2.5 - Course information\**\*.sw?
+
+# flyctl launch added from part2\2.6-2.10\.gitignore
+# Logs
+part2\2.6-2.10\**\logs
+part2\2.6-2.10\**\*.log
+part2\2.6-2.10\**\npm-debug.log*
+part2\2.6-2.10\**\yarn-debug.log*
+part2\2.6-2.10\**\yarn-error.log*
+part2\2.6-2.10\**\pnpm-debug.log*
+part2\2.6-2.10\**\lerna-debug.log*
+
+part2\2.6-2.10\**\node_modules
+part2\2.6-2.10\**\dist
+part2\2.6-2.10\**\dist-ssr
+part2\2.6-2.10\**\*.local
+
+# Editor directories and files
+part2\2.6-2.10\**\.vscode\*
+!part2\2.6-2.10\**\.vscode\extensions.json
+part2\2.6-2.10\**\.idea
+part2\2.6-2.10\**\.DS_Store
+part2\2.6-2.10\**\*.suo
+part2\2.6-2.10\**\*.ntvs*
+part2\2.6-2.10\**\*.njsproj
+part2\2.6-2.10\**\*.sln
+part2\2.6-2.10\**\*.sw?
+
+# flyctl launch added from part2\coursework2\.gitignore
+# Logs
+part2\coursework2\**\logs
+part2\coursework2\**\*.log
+part2\coursework2\**\npm-debug.log*
+part2\coursework2\**\yarn-debug.log*
+part2\coursework2\**\yarn-error.log*
+part2\coursework2\**\pnpm-debug.log*
+part2\coursework2\**\lerna-debug.log*
+
+part2\coursework2\**\node_modules
+part2\coursework2\**\dist
+part2\coursework2\**\dist-ssr
+part2\coursework2\**\*.local
+
+# Editor directories and files
+part2\coursework2\**\.vscode\*
+!part2\coursework2\**\.vscode\extensions.json
+part2\coursework2\**\.idea
+part2\coursework2\**\.DS_Store
+part2\coursework2\**\*.suo
+part2\coursework2\**\*.ntvs*
+part2\coursework2\**\*.njsproj
+part2\coursework2\**\*.sln
+part2\coursework2\**\*.sw?
+fly.toml
